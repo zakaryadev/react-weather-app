@@ -1,0 +1,124 @@
+{
+    "location": {
+        "city": "Nukus",
+        "region": " Qoraqalpoghiston",
+        "woeid": 2272619,
+        "country": "Uzbekistan",
+        "lat": 42.462521,
+        "long": 59.612881,
+        "timezone_id": "Asia/Samarkand"
+    },
+    "current_observation": {
+        "wind": {
+            "chill": 3,
+            "direction": 203,
+            "speed": 22.4
+        },
+        "atmosphere": {
+            "humidity": 57,
+            "visibility": 16.01,
+            "pressure": 1019.3,
+            "rising": 0
+        },
+        "astronomy": {
+            "sunrise": "7:37 am",
+            "sunset": "5:53 pm"
+        },
+        "condition": {
+            "code": 32,
+            "text": "Sunny",
+            "temperature": 7
+        },
+        "pubDate": 1667390100
+    },
+    "forecasts": [
+        {
+            "day": "Wed",
+            "date": 1667358000,
+            "low": 3,
+            "high": 11,
+            "text": "Partly Cloudy",
+            "code": 30
+        },
+        {
+            "day": "Thu",
+            "date": 1667444400,
+            "low": 6,
+            "high": 15,
+            "text": "Mostly Sunny",
+            "code": 34
+        },
+        {
+            "day": "Fri",
+            "date": 1667530800,
+            "low": 0,
+            "high": 12,
+            "text": "Partly Cloudy",
+            "code": 30
+        },
+        {
+            "day": "Sat",
+            "date": 1667617200,
+            "low": 4,
+            "high": 13,
+            "text": "Partly Cloudy",
+            "code": 30
+        },
+        {
+            "day": "Sun",
+            "date": 1667703600,
+            "low": 0,
+            "high": 10,
+            "text": "Showers",
+            "code": 11
+        },
+        {
+            "day": "Mon",
+            "date": 1667790000,
+            "low": -2,
+            "high": 8,
+            "text": "Partly Cloudy",
+            "code": 30
+        },
+        {
+            "day": "Tue",
+            "date": 1667876400,
+            "low": -2,
+            "high": 5,
+            "text": "Mostly Sunny",
+            "code": 34
+        },
+        {
+            "day": "Wed",
+            "date": 1667962800,
+            "low": -2,
+            "high": 6,
+            "text": "Partly Cloudy",
+            "code": 30
+        },
+        {
+            "day": "Thu",
+            "date": 1668049200,
+            "low": -6,
+            "high": 2,
+            "text": "Cloudy",
+            "code": 26
+        },
+        {
+            "day": "Fri",
+            "date": 1668135600,
+            "low": 0,
+            "high": 11,
+            "text": "Mostly Sunny",
+            "code": 34
+        },
+        {
+            "day": "Sat",
+            "date": 1668222000,
+            "low": 0,
+            "high": 11,
+            "text": "Mostly Cloudy",
+            "code": 28
+        }
+    ]
+}

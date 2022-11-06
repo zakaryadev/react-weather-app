@@ -4,7 +4,9 @@ import wind from "../assets/wind (1).svg";
 import cloud from "../assets/cloud11.svg";
 import onekiQir from "../assets/12qir.svg";
 
-function Content({ data }) {
+function Content(props) {
+  const { data } = props;
+
   return (
     <div className="card">
       <div className="card-content">
@@ -16,7 +18,7 @@ function Content({ data }) {
               <p>°</p>
             </div>
 
-            <p className="text-p">Sunny</p>
+            <p className="text-p">{data.current_observation.condition.text}</p>
           </div>
         </div>
         <div className="bottom">

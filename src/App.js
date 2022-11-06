@@ -19,22 +19,37 @@ function App() {
       `https://yahoo-weather5.p.rapidapi.com/weather?location=${location}&format=json&u=c`,
       options
     )
-      .then((response) => response.json())
+      .then((response) => {
+        setLoading(false);
+        if (response.status === 200) {
+          return response.json();
+        }
+        if (response.status === 500) {
+          setLoc("Nukus");
+          return alert("Please, enter correct city name!");
+        }
+      })
       .then((data) => {
         data && setData(data);
         setLoading(true);
       })
-      .catch((err) => console.error(err));
+      .catch((err) => {
+        console.log(err.statusText);
+      });
   }, [location]);
-  console.log(data);
+
   const setLoc = (location) => {
     setLocation(location);
+    console.log(location);
   };
 
   return (
-    <div className="App">
-      {isLoaded ? <Content data={data} /> : <h1>Loading...</h1>}
-    </div>
+    <>
+      <Search setLoc={setLoc} />
+      <div className="App">
+        {isLoaded ? <Content data={data} /> : <h1>Loading...</h1>}
+      </div>
+    </>
   );
 }
 

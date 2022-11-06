@@ -17,12 +17,14 @@ body {
   background-color: #4A7DFF;
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: var(--light-text-color);
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  align-items: center;
 }
 
+.App {
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 100px);
+  align-items: center;
+}
 
 .card {
   padding: 10px;
@@ -31,17 +33,18 @@ body {
   background: #C9E5FF;
   box-shadow: 0px 34px 101px rgba(9, 0, 63, 0.38);
   border-radius: 20px;
+  padding: 60px;
 }
 
 .top {
-  padding: 10px 60px 10px 10px;;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .top img {
-  height: 250px;
+  height: 110px;
 }
 
 .top-text {
@@ -55,23 +58,25 @@ h2 {
   font-weight: 700;
   line-height: 96px;
 }
-
+.text {
+  padding-left: 30px;
+}
 .top-text p {
   font-size: 96px;
   line-height: 96px;
 }
 
 .text-p {
-  font-size: 30px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--light-outside-text-color);
 }
 
 .bottom {
-  padding: 20px;
+  padding-top: 60px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .bottom-item {
@@ -93,3 +98,30 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
+.transparent {
+  background: transparent;
+  color: #C9E5FF;
+}
+
+.transparent::placeholder {
+  color: #C9E5FF;
+}
+
+.transparent:focus {
+  background: transparent;
+  color: #C9E5FF;
+}
+
+.bg-must {
+  background-color: #296399;
+  border: none;
+}
+
+.bg-must:hover {
+  background-color: #296399;
+  opacity: 0.8;
+}
+
+.search-form {
+  width: 500px;
+}

@@ -1,13 +1,4 @@
-var datetime = 1383066000000; // anything
-var date = new Date(datetime);
-var options = {
-  year: "numeric",
-  month: "numeric",
-  day: "numeric",
-  hour: "numeric",
-  second: "numeric",
-};
-
-var result = date.toLocaleDateString("ru", options);
-
-console.log(result);
+let datetime = 1667703600;
+const date = new Date(1667790000);
+const date1 = new Date(1667703600);
+console.log(date.toString(),"|||||||" + date1.toString());

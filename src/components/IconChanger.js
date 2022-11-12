@@ -6,7 +6,7 @@ import moon from "../assets/moon1.svg";
 import rain from "../assets/rain.svg";
 import thunder from "../assets/thunderbolt.svg";
 import moonStarts from "../assets/moon-starts.svg";
-
+import Thunderstorms from "../assets/rain-thunderbolt.svg";
 function IconChanger(props) {
   const { data } = props;
 
@@ -35,7 +35,9 @@ function IconChanger(props) {
     case "showers":
       return <img src={rain} alt="showers" />;
       break;
-
+    case "thunderstorms":
+      return <img src={Thunderstorms} alt="Thunderstorms" />
+    break;
     default:
       return <img src={sun} alt="Sunny" />;
       break;

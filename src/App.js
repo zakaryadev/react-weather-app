@@ -40,7 +40,6 @@ function App() {
 
   const setLoc = (location) => {
     setLocation(location);
-    console.log(location);
   };
 
   return (

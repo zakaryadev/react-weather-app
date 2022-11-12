@@ -13,34 +13,27 @@ function IconChanger(props) {
   switch (data.current_observation.condition.text.toLocaleLowerCase()) {
     case "sunny":
       return <img src={sun} alt="Sunny" />;
-      break;
     case "moon":
       return <img src={moon} alt="cloudlly" />;
-      break;
     case "cloudy":
       return <img src={cloud} alt="cloudlly" />;
-      break;
     case "mostly sunny":
       return <img src={sun} alt="Clear" />;
-      break;
     case "rain":
       return <img src={rain} alt="rain" />;
-      break;
     case "thunder":
       return <img src={thunder} alt="thunder" />;
-      break;
     case "mostly cloudy":
       return <img src={clouds} alt="clouds" />;
-      break;
+
     case "showers":
       return <img src={rain} alt="showers" />;
-      break;
+
     case "thunderstorms":
       return <img src={Thunderstorms} alt="Thunderstorms" />
-    break;
+
     default:
       return <img src={sun} alt="Sunny" />;
-      break;
   }
 }
 

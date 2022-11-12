@@ -5,7 +5,6 @@ import clouds from "../assets/clouds.svg";
 import moon from "../assets/moon1.svg";
 import rain from "../assets/rain.svg";
 import thunder from "../assets/thunderbolt.svg";
-import moonStarts from "../assets/moon-starts.svg";
 import Thunderstorms from "../assets/rain-thunderbolt.svg";
 function IconChanger(props) {
   const { data } = props;
